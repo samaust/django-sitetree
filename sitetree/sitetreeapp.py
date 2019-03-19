@@ -1099,6 +1099,6 @@ class SiteTree(object):
             try:
                 varname = Variable(varname).resolve(context)
             except VariableDoesNotExist:
-                varname = varname
+                varname = '#unresolved'
 
         return varname
